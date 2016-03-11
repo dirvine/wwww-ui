@@ -1,6 +1,16 @@
 <html ng-app>
+<head>  <link rel="stylesheet" href="default.css" /></head>
 <body>
-  <h1>Hello World!</h1>
+<div id="title-bar">
+<div id="title">Let's try and get smart</div>
+<div id="title-bar-btns">
+<button id="min-btn">-</button>
+<button id="max-btn">+</button>
+<button id="close-btn">x</button>
+</div>
+</div>
+<div id="content">
+  <h1>Main!</h1>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
    We are using Electron
    <script> document.write(process.versions['electron']) </script> on
@@ -14,5 +24,6 @@
       <input type="text" ng-model="yourName" placeholder="Enter a name here">
       <h1>Hello, {{ yourName }}!</h1>
     </div>
+     <script src="default.js"></script>
 </body>
 </html>

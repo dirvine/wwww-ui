@@ -7,6 +7,7 @@ var app = require('app');
 var BrowserWindow = require('browser-window');
 var mainWindow = null;
 
+
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
   if (process.platform != 'darwin') {
@@ -19,7 +20,7 @@ app.on('window-all-closed', function () {
 app.on('ready', function () {
 
   // Create the browser window.
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  mainWindow = new BrowserWindow({ width: 800, height: 600, frame : false});
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
