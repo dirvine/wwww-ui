@@ -1,0 +1,18 @@
+<html ng-app>
+<body>
+  <h1>Hello World!</h1>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+   We are using Electron
+   <script> document.write(process.versions['electron']) </script> on
+   <script> document.write(process.platform) </script>
+   <script type="text/javascript">
+      var fs = require('fs');
+      var file = fs.readFileSync('app/package.json');
+      document.write(file);
+   </script>
+ <div>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello, {{ yourName }}!</h1>
+    </div>
+</body>
+</html>
