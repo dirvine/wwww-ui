@@ -1,0 +1,14 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "description": "test",
+  "main": "app/index.js",
+  "author": "David Irvine <david.irvine@maidsafe.net>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "neon-cli": "^0.1.7"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
